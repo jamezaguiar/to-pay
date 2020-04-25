@@ -12,7 +12,13 @@ class Debt extends Model {
         sequelize,
       }
     );
+
+    return this;
   }
+
+  /*   static associate(models) {
+    this.hasOne(models.Client, { foreignKey: 'client_id' });
+  } */
 }
 
 export default Debt;

@@ -19,14 +19,6 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      client_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'clients',
-          key: 'id',
-        },
-        allowNull: false,
-      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,

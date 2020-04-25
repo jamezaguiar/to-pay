@@ -10,7 +10,12 @@ class Client extends Model {
         sequelize,
       }
     );
+    return this;
   }
+
+  /*   static associate(models) {
+    this.hasOne(models.Creditor, { foreignKey: 'creditor_id' });
+  } */
 }
 
 export default Client;
