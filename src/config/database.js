@@ -1,15 +1,14 @@
 require('dotenv/config');
 
 module.exports = {
-  dialect: process.env.DB_DIALECT, // Linguagem do banco de dados
-  host: process.env.DB_HOST, // Endereço
-  username: process.env.DB_USERNAME, // Usuário do banco
-  password: process.env.DB_PASSWORD, // Senha do banco
-  database: process.env.DB_NAME, // Nome do banco
+  dialect: process.env.DB_DIALECT,
+  host: process.env.DB_HOST,
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
   define: {
-    // Regras
-    timestamps: true, // Adicionar estampas de tempo
-    underscored: true, // Padrão de nomenclaturas usando _
+    timestamps: true,
+    underscored: true,
     underscoredAll: true,
   },
 };
